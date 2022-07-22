@@ -1,8 +1,13 @@
 "use strict";
 
 const popUpRemove = document.querySelector(".pop-up__remove");
-const container = document.querySelector(".hidden-card");
+const hiddenCard = document.querySelector(".hidden-card");
+const btn = document.querySelector(".button");
+const container = document.querySelector(".overlay-container");
 
 popUpRemove.addEventListener("click", () => {
-  container.innerHTML = "";
+  hiddenCard.innerHTML = "";
+});
+btn.addEventListener("click", () => {
+  container.classList.add("active");
 });
