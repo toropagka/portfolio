@@ -6,8 +6,9 @@ const btn = document.querySelector(".button");
 const container = document.querySelector(".overlay-container");
 
 popUpRemove.addEventListener("click", () => {
-  hiddenCard.innerHTML = "";
+  container.classList.remove("active");
 });
+
 btn.addEventListener("click", () => {
   container.classList.add("active");
 });
