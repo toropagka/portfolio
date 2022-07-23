@@ -100,11 +100,15 @@ h1 {
 
 .description__button,
 .about__button,
-.benefits__button {
+.benefits__button,
+.stages__button {
   width: 274px;
   height: 57px;
   border: none;
   background: #fadbb8;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .description__photo {
@@ -241,6 +245,7 @@ h1 {
   background-image: url(../images/bg_benefits_img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 100px;
 }
 .benefits__text {
   font-weight: 600;
@@ -290,6 +295,77 @@ h1 {
 }
 
 /* конец стилей для секции "Преимущества работы" */
+
+/* стили для секции "Этапы работы" */
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0px auto 100px;
+}
+.stages__text {
+  margin: 0px 0px 80px;
+  width: 345px;
+  height: 57px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  color: #212426;
+}
+.stages__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.stages__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+}
+.stages__description_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.stages__description_img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.stages__description_text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212426;
+  border-bottom: 1px solid #eed2b2;
+  padding-bottom: 13px;
+}
+.button {
+}
+.stages__button {
+}
+
+.stages__photos {
+  display: flex;
+  gap: 15px;
+}
+.stages__photos_small {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.stages__photo_item {
+  max-width: 240px;
+  max-height: 234px;
+}
+.stages__photo_item-big {
+  max-width: 445px;
+  max-height: 481px;
+}
+
+/* конец стилей для секции "Этапы работы" */
 
 /*стили для всплывающей карточки*/
 .overlay-container {
