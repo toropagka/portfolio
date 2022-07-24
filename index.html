@@ -169,24 +169,25 @@
   <section class="reviews">
     <h2 class="reviews__text">Отзывы</h2>
     <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="father">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video class="slider-video" src="./video/ji.mp4"></video>
+          </div>
+          <div class="swiper-slide">
+            <video class="slider-video" src="https://into-the-program.com/uploads/sample_video02.mp4"></video>
+          </div>
+          <div class="swiper-slide">
+            <video class="slider-video" src="./video/IMG_5398.MP4"></video>
+          </div>
+        </div>
 
-      <!-- If we need navigation buttons -->
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
 
 
@@ -246,8 +247,8 @@
       </div>
     </div>
   </div>
-  <script type="module" src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 
 
 </body>

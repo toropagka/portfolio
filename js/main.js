@@ -1,6 +1,6 @@
 "use strict";
 
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
 const popUpRemove = document.querySelector(".pop-up__remove");
 const hiddenCard = document.querySelector(".hidden-card");
@@ -10,6 +10,7 @@ const benefitsBlock = document.querySelectorAll(".benefits__block");
 const benefitsBlockNumber = document.querySelectorAll(
   ".benefits__block_number"
 );
+const video = document.querySelectorAll(".slider-video");
 
 popUpRemove.addEventListener("click", () => {
   container.classList.remove("active");
@@ -31,16 +32,20 @@ benefitsBlock.forEach((element, index) => {
   };
 });
 
-const swiper = new Swiper(".swiper", {
+new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
   slidesPerView: 2,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   spaceBetween: 30,
+  pauseOnMouseEnter: true,
+  playOnMouseEnter: true,
+
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 
   // Navigation arrows
@@ -49,14 +54,15 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    dragSize: 70,
-    snapOnRelease: true,
-  },
   keyboard: {
     enabled: true,
     onlyInViewport: true,
   },
 });
+
+for (let i of video) {
+  i.addEventListener("click", function () {
+    i.paused ? i.play() : i.pause();
+    i.width = 500;
+  });
+}
