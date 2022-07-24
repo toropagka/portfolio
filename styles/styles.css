@@ -365,7 +365,7 @@ h1 {
 
 /* стили для секции "Отзывы" */
 .reviews {
-  margin-bottom: 100px;
+  margin-bottom: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,6 +397,7 @@ h1 {
 .swiper-slide {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .swiper-slide video {
   width: 445px;
@@ -422,6 +423,159 @@ h1 {
 }
 
 /* конец стилей для секции "Отзывы" */
+
+/* стили для секции "вопросы" */
+.questions {
+  display: flex;
+  max-width: 1110px;
+  height: 427px;
+  margin: 0px auto 120px;
+  background: #221e1e;
+  outline: 1px solid rgba(13, 5, 2, 0.45);
+  outline-offset: 33px;
+}
+
+.questions__img_wrapper {
+  width: 500px;
+  height: 100%;
+  position: relative;
+}
+.questions__img {
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  max-width: 440px;
+  max-height: 658px;
+}
+.questions__wrapper {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.questions__header {
+  margin: 0px;
+  width: 315px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.questions__text {
+  margin: 0;
+  width: 304px;
+  height: 21px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+input {
+  outline: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+.questions__contacts {
+  display: flex;
+  gap: 30px;
+}
+.questions__name {
+  background: none;
+}
+.questions__email {
+  background: none;
+}
+textarea {
+  resize: none;
+  color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  border: 1px solid #ffffff;
+  height: 120px;
+}
+
+.questions__button {
+  color: #fff;
+  width: 186px;
+  height: 57px;
+  background: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* конец стилей для секции "вопросы" */
+
+/* стили для секции "контакты" */
+.contacts {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/contacts_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.contacts__header {
+  width: 238px;
+  height: 57px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  color: #ffffff;
+  margin: 80px 0px 16px;
+}
+.contacts__text {
+  width: 851px;
+  height: 38px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0px 0px 40px;
+}
+.contacts__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__phone_icon {
+  margin-bottom: 20px;
+}
+.contacts__phone_number a {
+  width: 238px;
+  height: 28px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.contacts__social {
+  display: flex;
+  gap: 30px;
+  margin: 36px 0px 100px;
+}
+.contacts__social a {
+  text-decoration: none;
+}
+.contacts__social_vk {
+}
+.contacts__social_whatsapp {
+}
+/* конец стилей для секции "контакты" */
 
 /*стили для всплывающей карточки*/
 .overlay-container {

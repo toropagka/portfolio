@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
+
+<!-- !!!!!!!!!!!!!!!!!!!!Добавить ссылки для попапа на соц сети, 
+  ссылку на почту в форму(на почте подтвердить), 
+  якоря к секциям из шапки и футера!!!!!!!!!!!!!! -->
+
+
 <body>
   <header class="header">
     <div class="header__wrapper">
@@ -189,13 +195,43 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+  </section>
 
 
+  <section class="questions">
+    <div class="questions__img_wrapper">
+      <img class="questions__img" src="./images/popup_img.png" alt="Olga">
+    </div>
+    <div class="questions__wrapper">
+      <h2 class="questions__header">Остались вопросы?</h2>
+      <p class="questions__text">Оставьте заявку и я с вами свяжусь</p>
+      <form class="questions__form" action="https://formsubmit.co/your@email.com" method="POST">
+        <div class="questions__contacts">
+          <input class="questions__name" placeholder="Ваше имя" type="text" name="name" required>
+          <input class="questions__email" placeholder="Email" type="email" name="email" required>
+        </div>
+        <textarea class="questions__message" placeholder="Введите сообщение" name="text" required></textarea>
+        <button class="questions__button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 
-
-
+  <section class="contacts">
+    <h2 class="contacts__header">Контакты</h2>
+    <p class="contacts__text">Свяжитесь со мной по указанным контактным данным</p>
+    <div class="contacts__phone">
+      <img src="./images/contacts_phone.png" alt="contacts_phone" class="contacts__phone_icon">
+      <div class="contacts__phone_number"><a href="tel:+79858490607">+7 (985) 849-06-07</a></div>
+    </div>
+    <div class="contacts__social">
+      <a href="#"><img src="./images/contacts_vk.svg" alt="contacts_vk" class="contacts__social_vk"></a>
+      <a href="#"><img src="./images/contacts_whatsapp.svg" alt="contacts_whatsapp"
+          class="contacts__social_whatsapp"></a>
+    </div>
 
   </section>
+
+
 
 
 

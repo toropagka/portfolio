@@ -35,7 +35,7 @@ benefitsBlock.forEach((element, index) => {
 new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
-  loop: true,
+  loop: false,
   slidesPerView: 2,
   slidesPerGroup: 1,
   spaceBetween: 30,
@@ -63,6 +63,5 @@ new Swiper(".swiper", {
 for (let i of video) {
   i.addEventListener("click", function () {
     i.paused ? i.play() : i.pause();
-    i.width = 500;
   });
 }
