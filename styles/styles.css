@@ -641,8 +641,6 @@ textarea {
   gap: 16px;
   width: 250px;
 }
-.contacts__phone_number {
-}
 
 .footer__button {
   color: #fff;
@@ -654,6 +652,91 @@ textarea {
 }
 
 /* конец стилей для футера */
+
+/*стили для всплывающих карточек услуг*/
+.services-container {
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.services-pop-up {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 1383px;
+  height: 857px;
+  margin: 15% auto 0;
+  background-color: #fff;
+}
+.services-pop-up__remove {
+  border: none;
+  color: #444547;
+  white-space: nowrap;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  position: absolute;
+  font-size: 40px;
+  right: 10px;
+  top: 3px;
+  font-weight: 300;
+}
+.services-pop-up__img {
+  width: 444px;
+  height: 597px;
+}
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 597px;
+  padding-bottom: 97px;
+}
+.services-header {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #212426;
+  margin: 0;
+}
+.services-price,
+.services-item {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.services-list {
+}
+.services-item {
+  text-align: start;
+  margin-bottom: 24px;
+  list-style-type: none;
+}
+.services-item::before {
+  content: "\2022";
+  margin-right: 15px;
+}
+
+.services__button {
+  background-color: #eed2b2;
+  width: 186px;
+  height: 57px;
+  border: none;
+  margin-left: 40px;
+}
+
+/*конец стилей для всплывающих карточек услуг*/
 
 /*стили для всплывающей карточки*/
 .overlay-container {
