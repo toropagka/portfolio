@@ -11,6 +11,7 @@ const benefitsBlockNumber = document.querySelectorAll(
   ".benefits__block_number"
 );
 const video = document.querySelectorAll(".slider-video");
+const body = document.getElementsByTagName("body");
 
 popUpRemove.addEventListener("click", () => {
   container.classList.remove("active");

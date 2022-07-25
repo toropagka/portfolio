@@ -7,6 +7,17 @@ body {
   cursor: pointer;
 }
 
+#about,
+#contacts,
+#stages,
+#reviews,
+#services {
+  scroll-margin: 170px;
+}
+#questions {
+  scroll-margin: 320px;
+}
+
 /* стили для хедера */
 .header {
   position: fixed;
@@ -16,7 +27,6 @@ body {
   height: 120px;
   display: flex;
   justify-content: center;
-
   align-items: center;
   background: #fbf6f0;
 }
@@ -135,8 +145,7 @@ h1 {
 /* стили для секции "Услуги" */
 .services {
   width: 1110px;
-  margin: 0 auto;
-  margin-top: 140px;
+  margin: 140px auto 100px;
   text-align: center;
 }
 
@@ -192,7 +201,7 @@ h1 {
 
 .about {
   width: 1110px;
-  margin: 100px auto 130px;
+  margin: 0px auto 130px;
   display: flex;
   justify-content: space-between;
 }
@@ -525,7 +534,6 @@ textarea {
   background-image: url(../images/contacts_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 100px;
 }
 .contacts__header {
   width: 238px;
@@ -571,11 +579,80 @@ textarea {
 .contacts__social a {
   text-decoration: none;
 }
-.contacts__social_vk {
-}
-.contacts__social_whatsapp {
-}
+
 /* конец стилей для секции "контакты" */
+
+/* стили для футера */
+.footer {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 65px;
+  padding: 50px 400px 109px;
+  box-sizing: border-box;
+  background: #1a1a1a;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__text_logo img {
+  width: 250px;
+  height: 20px;
+}
+.footer__text_description {
+  max-width: 226px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+.footer__links {
+}
+.footer__links_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 534px;
+}
+.footer__links_item {
+  flex-basis: 33%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 16px;
+}
+.footer__links_item a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__links_item:nth-child(3n + 1) {
+  flex-basis: 25%;
+}
+.footer__links_item:nth-child(3n + 3) {
+  flex-basis: 41%;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contacts__phone_number {
+}
+
+.footer__button {
+  color: #fff;
+  width: 186px;
+  height: 57px;
+  background: none;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* конец стилей для футера */
 
 /*стили для всплывающей карточки*/
 .overlay-container {
