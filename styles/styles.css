@@ -3,9 +3,19 @@ body {
   font-family: "Rubik", sans-serif;
   max-width: 1920px border-box;
 }
+.noscrol {
+  overflow: hidden;
+}
 
 .button {
   cursor: pointer;
+  background-color: none;
+  border: 1px solid #212426;
+}
+.button:hover {
+  background-color: #eed2b2;
+  transition: all ease-in-out 0.3s;
+  border: none;
 }
 
 #about,
@@ -76,7 +86,6 @@ body {
   width: 186px;
   height: 57px;
   background: none;
-  border: 1px solid #212426;
   cursor: pointer;
 }
 /* конец стилей для хедера */
@@ -115,8 +124,6 @@ h1 {
 .stages__button {
   width: 274px;
   height: 57px;
-  border: none;
-  background: #fadbb8;
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
@@ -621,19 +628,23 @@ textarea {
 .footer__links_item {
   flex-basis: 33%;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
   padding-bottom: 16px;
 }
 .footer__links_item a {
+  font-size: 18px;
+  line-height: 21px;
   text-decoration: none;
   color: #fff;
 }
+.footer__links_item a:hover {
+  text-decoration: 2px underline;
+  color: #fff;
+}
 .footer__links_item:nth-child(3n + 1) {
-  flex-basis: 25%;
+  flex-basis: 20%;
 }
 .footer__links_item:nth-child(3n + 3) {
-  flex-basis: 41%;
+  flex-basis: 47%;
 }
 .footer__contacts {
   display: flex;
@@ -665,16 +676,35 @@ textarea {
   top: 0;
   left: 0;
 }
+
 .services-pop-up {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   box-sizing: border-box;
-  width: 1383px;
+  max-width: 1383px;
   height: 857px;
   margin: 5% auto 0;
   background-color: #fff;
+}
+.services-pop-up::before {
+  content: "";
+  position: absolute;
+  bottom: 170px;
+  left: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 440px;
+  height: 593px;
+}
+.services-pop-up::after {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  left: 118px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 440px;
+  height: 593px;
 }
 .services-pop-up__remove {
   border: none;
@@ -693,12 +723,15 @@ textarea {
 .services-pop-up__img {
   width: 444px;
   height: 597px;
+  position: relative;
+  z-index: 10;
 }
+
 .services-wrapper {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: 597px;
+  height: 700px;
   padding-bottom: 97px;
 }
 .services-header {
@@ -707,7 +740,8 @@ textarea {
   line-height: 47px;
   text-align: center;
   color: #212426;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 490px;
 }
 .services-price,
 .services-item {
@@ -717,9 +751,9 @@ textarea {
   text-align: center;
   color: #000000;
 }
-.services-list {
-}
+
 .services-item {
+  max-width: 613px;
   text-align: start;
   margin-bottom: 24px;
   list-style-type: none;
@@ -730,7 +764,6 @@ textarea {
 }
 
 .services__button {
-  background-color: #eed2b2;
   width: 186px;
   height: 57px;
   border: none;

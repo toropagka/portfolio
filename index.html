@@ -211,7 +211,7 @@
           <input class="questions__email" placeholder="Email" type="email" name="email" required>
         </div>
         <textarea class="questions__message" placeholder="Введите сообщение" name="text" required></textarea>
-        <button class="questions__button" type="submit">Отправить</button>
+        <button class="button questions__button" type="submit">Отправить</button>
       </form>
     </div>
   </section>
@@ -220,13 +220,31 @@
     <h2 class="contacts__header">Контакты</h2>
     <p class="contacts__text">Свяжитесь со мной по указанным контактным данным</p>
     <div class="contacts__phone">
-      <img src="./images/contacts_phone.png" alt="contacts_phone" class="contacts__phone_icon">
+      <svg class="contacts__phone_icon" width="18" height="28" viewBox="0 0 18 28" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16 0H2C1.46957 0 0.96086 0.210714 0.585787 0.585786C0.210714 0.960859 0 1.46957 0 2V26C0 26.5304 0.210714 27.0391 0.585787 27.4142C0.96086 27.7893 1.46957 28 2 28H16C16.5304 28 17.0391 27.7893 17.4142 27.4142C17.7893 27.0391 18 26.5304 18 26V2C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0V0ZM10 26H8V24H10V26ZM2 22V2H16V22H2Z"
+          fill="white" />
+      </svg>
       <div class="contacts__phone_number"><a href="tel:+79858490607">+7 (985) 849-06-07</a></div>
     </div>
     <div class="contacts__social">
-      <a href="#"><img src="./images/contacts_vk.svg" alt="contacts_vk" class="contacts__social_vk"></a>
-      <a href="#"><img src="./images/contacts_whatsapp.svg" alt="contacts_whatsapp"
-          class="contacts__social_whatsapp"></a>
+      <a href="#">
+
+        <svg class="contacts__social_vk" width="27" height="27" viewBox="0 0 27 27" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M26.5502 23.65V3.34995C26.5502 1.75495 25.2408 0.449951 23.6429 0.449951H3.35745C1.68995 0.449951 0.450195 1.6868 0.450195 3.34995V23.65C0.450195 25.3146 1.68995 26.55 3.35745 26.55H23.6429C24.4124 26.5488 25.1501 26.2431 25.6949 25.6997C26.2396 25.1563 26.5471 24.4194 26.5502 23.65ZM21.017 15.8301C21.017 15.8301 22.6584 17.4498 23.0629 18.2009C23.0745 18.2168 23.0789 18.2313 23.0832 18.2371C23.2471 18.5126 23.2891 18.7301 23.2065 18.8896C23.0702 19.155 22.6062 19.2884 22.4481 19.3H19.5496C19.3466 19.3 18.9261 19.2478 18.4157 18.8954C18.0242 18.6228 17.637 18.1719 17.26 17.7325C16.6974 17.08 16.2102 16.5145 15.7201 16.5145C15.658 16.5144 15.5962 16.5246 15.5374 16.545C15.1648 16.6639 14.6921 17.1931 14.6921 18.6069C14.6921 19.0491 14.3441 19.3014 14.0976 19.3014H12.7694C12.317 19.3014 9.96075 19.1434 7.8742 16.9408C5.3135 14.2438 3.0138 8.83385 2.9935 8.786C2.8485 8.43655 3.14865 8.2466 3.4749 8.2466H6.4039C6.79685 8.2466 6.923 8.4844 7.0129 8.69755C7.1144 8.9397 7.4972 9.917 8.1236 11.0161C9.14295 12.804 9.77079 13.5319 10.271 13.5319C10.3646 13.5313 10.4564 13.5069 10.5378 13.4608C11.1918 13.0998 11.07 10.7682 11.041 10.2868C11.041 10.1954 11.0395 9.2442 10.706 8.78745C10.4653 8.45685 10.0579 8.3307 9.8114 8.28285C9.91191 8.14435 10.0442 8.03197 10.1971 7.95515C10.6451 7.73185 11.4528 7.69995 12.2561 7.69995H12.7027C13.5741 7.71155 13.8003 7.7681 14.115 7.84785C14.7515 8.0001 14.7646 8.41335 14.708 9.81985C14.6921 10.2201 14.6747 10.6739 14.6747 11.2061C14.6747 11.3206 14.6703 11.4468 14.6703 11.5773C14.65 12.2965 14.6268 13.1099 15.1343 13.4434C15.2 13.4845 15.2758 13.5066 15.3533 13.5072C15.5302 13.5072 16.0594 13.5072 17.4935 11.0466C18.1242 9.9605 18.61 8.6787 18.6433 8.583C18.694 8.47953 18.7674 8.38883 18.8579 8.31765C18.9322 8.27907 19.015 8.25964 19.0986 8.2611H22.5424C22.9194 8.2611 23.1746 8.31765 23.2224 8.4612C23.3051 8.69175 23.2065 9.395 21.6332 11.5207L20.9329 12.4487C19.5061 14.3163 19.5061 14.412 21.017 15.8301Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#"><svg class="contacts__social_whatsapp" width="26" height="28" viewBox="0 0 26 28" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.5 5.675C6.79397 5.675 2.9683 9.36875 2.96183 13.9125C2.96183 15.4688 3.41496 16.9875 4.26942 18.2938L4.47009 18.6063L3.60915 21.6437L6.83929 20.825L7.15 21.0063C8.45759 21.7563 9.95937 22.1562 11.4935 22.1562H11.5C16.1996 22.1562 20.1288 18.4625 20.1288 13.9187C20.1288 11.7188 19.1449 9.65 17.533 8.09375C15.9147 6.53125 13.7786 5.675 11.5 5.675ZM16.5167 17.45C16.3031 18.0312 15.2804 18.5562 14.7884 18.625C13.9728 18.7437 13.3384 18.6812 11.7136 18.0063C9.14375 16.9312 7.46071 14.4312 7.33125 14.2687C7.20179 14.1062 6.28259 12.925 6.28259 11.7063C6.28259 10.4875 6.94286 9.8875 7.18237 9.6375C7.4154 9.3875 7.69375 9.325 7.86853 9.325C8.03683 9.325 8.21161 9.325 8.36049 9.33125C8.51585 9.3375 8.72946 9.275 8.93661 9.75625C9.15022 10.25 9.66161 11.4688 9.72634 11.5938C9.79107 11.7188 9.83638 11.8625 9.74576 12.025C9.25379 12.975 8.72946 12.9375 8.99487 13.375C9.98527 15.0188 10.9757 15.5875 12.4839 16.3188C12.7429 16.4438 12.8917 16.425 13.0406 16.2563C13.1895 16.0938 13.6815 15.5312 13.8498 15.2875C14.0181 15.0375 14.1929 15.0813 14.4259 15.1625C14.6589 15.2438 15.9212 15.8438 16.1801 15.9688C16.4391 16.0938 16.6074 16.1562 16.6721 16.2563C16.7304 16.375 16.7304 16.875 16.5167 17.45ZM22.8929 0H0.107143C-1.60826 0 -3 1.34375 -3 3V25C-3 26.6562 -1.60826 28 0.107143 28H22.8929C24.6083 28 26 26.6562 26 25V3C26 1.34375 24.6083 0 22.8929 0ZM11.4935 23.825C9.77165 23.825 8.08214 23.4062 6.58683 22.6187L1.14286 24L2.59933 18.8625C1.69955 17.3625 1.22701 15.6562 1.22701 13.9062C1.23348 8.44375 5.83594 4 11.4935 4C14.2382 4 16.8145 5.03125 18.7565 6.90625C20.692 8.78125 21.8571 11.2687 21.8571 13.9187C21.8571 19.3813 17.1511 23.825 11.4935 23.825Z"
+            fill="white" />
+        </svg>
+      </a>
     </div>
 
   </section>
@@ -275,27 +293,191 @@
 
 
   <!-- карточки услуг -->
-  <div class="services-card">
-    <div class="services-container">
-      <div class="services-pop-up">
-        <button type="button" class="services-pop-up__remove">&times;</button>
-        <img class="services-pop-up__img" src="./images/0.jpg" alt="wedding">
-        <div class="services-wrapper">
-          <h3 class="services-header">Свадьба</h3>
-          <p class="services-price">от 2 500 ₽ / час</p>
-          <ul class="services-list">
-            <li class="services-item">Разработка индивидуальной программы </li>
-            <li class="services-item">Эксклюзивные конкурсы</li>
-            <li class="services-item">Поздравления от гостей в нестандартной форме</li>
-            <li class="services-item">Заводные танцы и драйв</li>
-            <li class="services-item">Заказ диджея и светозвукового оборудования</li>
-          </ul>
-          <button class="button services__button button-contact">Связаться</button>
-        </div>
 
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/0.jpg" alt="wedding">
+      <div class="services-wrapper">
+        <h3 class="services-header">Свадьба</h3>
+        <p class="services-price">от 2 500 ₽ / час</p>
+        <ul class="services-list">
+          <li class="services-item">Разработка индивидуальной программы </li>
+          <li class="services-item">Эксклюзивные конкурсы</li>
+          <li class="services-item">Поздравления от гостей в нестандартной форме</li>
+          <li class="services-item">Заводные танцы и драйв</li>
+          <li class="services-item">Заказ диджея и светозвукового оборудования</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
       </div>
     </div>
   </div>
+
+
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/1.jpg" alt="birthday">
+      <div class="services-wrapper">
+        <h3 class="services-header">День рождения</h3>
+        <p class="services-price">от 2 500 ₽ / час</p>
+        <ul class="services-list">
+          <li class="services-item">Разработка программы под концепцию праздника</li>
+          <li class="services-item">Конкурсы, в которых хочется участвовать</li>
+          <li class="services-item">Заводные танцы и драйв</li>
+          <li class="services-item">Заказ диджея и светозвукового оборудования</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/2.jpg" alt="Corporate">
+      <div class="services-wrapper">
+        <h3 class="services-header">Корпоратив</h3>
+        <p class="services-price">от 2 500 ₽ / час</p>
+        <ul class="services-list">
+          <li class="services-item">Подготовка развлекательной программы согласно концепции праздника и пожеланиям </li>
+          <li class="services-item">Конкурсы, в которых хочется участвовать</li>
+          <li class="services-item">Заводные танцы и драйв</li>
+          <li class="services-item">Заказ диджея и светозвукового оборудования</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/3.jpg" alt="Concerte">
+      <div class="services-wrapper">
+        <h3 class="services-header">Концерт, общественное мероприятие</h3>
+        <p class="services-price">от 2 500 ₽ / час</p>
+        <ul class="services-list">
+          <li class="services-item">Проведение городских мероприятий</li>
+          <li class="services-item">Выдержка концепции мероприятия</li>
+          <li class="services-item"> Соблюдение очередности выступающих, их музыкального сопровождения</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/4.jpg" alt="Prom">
+      <div class="services-wrapper">
+        <h3 class="services-header">Выпускной бал</h3>
+        <p class="services-price">от 2 500 ₽ / час</p>
+        <ul class="services-list">
+          <li class="services-item">Программа праздника, объединяющая гостей</li>
+          <li class="services-item">Интересные и заводные конкурсы</li>
+          <li class="services-item">Танцы под любимую музыку</li>
+          <li class="services-item">Заказ диджея и светозвукового оборудования</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-container">
+    <div class="services-pop-up">
+      <button type="button" class="services-pop-up__remove">&times;</button>
+      <img class="services-pop-up__img" src="./images/4.jpg" alt="Prom">
+      <div class="services-wrapper">
+        <h3 class="services-header">Дополнительные услуги</h3>
+        <p class="services-price"></p>
+        <ul class="services-list">
+          <li class="services-item">Заказ диджея и светозвукового оборудования</li>
+          <li class="services-item">Артисты</li>
+          <li class="services-item">Фотограф</li>
+          <li class="services-item">Видеооператор</li>
+          <li class="services-item">Кондитер</li>
+          <li class="services-item">Визажист</li>
+          <li class="services-item">Аниматор</li>
+          <li class="services-item">Декоратор</li>
+        </ul>
+        <button class="button services__button button-contact">Связаться</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
