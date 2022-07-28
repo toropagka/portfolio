@@ -19,8 +19,15 @@
 
 <body>
   <header class="header">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
     <div class="header__wrapper">
-      <a href="#" class="header__logo"></a>
+      <a href="#" class="header__logo">
+        <img src="../images/logo.svg" alt="">
+      </a>
+
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item"><a href="#services" class="header__link">Услуги</a></li>
@@ -30,7 +37,19 @@
         </ul>
       </nav>
       <button class="button header__button button-contact">Связаться</button>
+
+      <!-- <a href="#" class="header__logo"></a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#services" class="header__link">Услуги</a></li>
+          <li class="header__item"><a href="#about" class="header__link">Обо мне</a></li>
+          <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+          <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="button header__button button-contact">Связаться</button> -->
     </div>
+
   </header>
 
   <section class="description">
@@ -297,7 +316,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/0.jpg" alt="wedding">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/0.jpg" alt="wedding">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">Свадьба</h3>
         <p class="services-price">от 2 500 ₽ / час</p>
@@ -317,7 +338,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/1.jpg" alt="birthday">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/1.jpg" alt="birthday">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">День рождения</h3>
         <p class="services-price">от 2 500 ₽ / час</p>
@@ -335,7 +358,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/2.jpg" alt="Corporate">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/2.jpg" alt="Corporate">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">Корпоратив</h3>
         <p class="services-price">от 2 500 ₽ / час</p>
@@ -353,7 +378,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/3.jpg" alt="Concerte">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/3.jpg" alt="Concerte">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">Концерт, общественное мероприятие</h3>
         <p class="services-price">от 2 500 ₽ / час</p>
@@ -370,7 +397,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/4.jpg" alt="Prom">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/4.jpg" alt="Prom">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">Выпускной бал</h3>
         <p class="services-price">от 2 500 ₽ / час</p>
@@ -388,7 +417,9 @@
   <div class="services-container">
     <div class="services-pop-up">
       <button type="button" class="services-pop-up__remove">&times;</button>
-      <img class="services-pop-up__img" src="./images/4.jpg" alt="Prom">
+      <div class="services__img-wrapper">
+        <img class="services-pop-up__img" src="./images/5.jpg" alt="Other">
+      </div>
       <div class="services-wrapper">
         <h3 class="services-header">Дополнительные услуги</h3>
         <p class="services-price"></p>
