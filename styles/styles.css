@@ -109,9 +109,6 @@ body {
   display: none;
   width: 0px;
   cursor: pointer;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 #menu-toggle {
@@ -163,11 +160,14 @@ body {
     display: flex;
     align-items: center;
   }
-
   .header__logo {
     margin-left: 50px;
+    text-align: center;
   }
-
+  .header__logo img {
+    width: 117px;
+    height: 38px;
+  }
   #menu-toggle ~ .header__wrapper .header__button {
     display: none;
   }
@@ -205,14 +205,6 @@ body {
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  /* .header__list > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 40%;
-    background-color: rgb(255, 255, 255);
-  } */
 }
 /* конец стилей для хедера */
 
@@ -258,7 +250,9 @@ h1 {
 .description__photo {
   position: relative;
 }
-
+.description__photo_adaptive {
+  display: none;
+}
 .description__photo_border {
   position: absolute;
   bottom: 30px;
@@ -273,6 +267,42 @@ h1 {
   width: 541px;
   height: 799px;
   z-index: 10;
+}
+
+@media screen and (max-width: 1199px) {
+  .description {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .description__photo {
+    display: none;
+  }
+  .description__photo_adaptive {
+    display: block;
+  }
+  .description__img {
+    width: 384px;
+    height: auto;
+  }
+  .description__photo_border {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid rgba(33, 36, 38, 0.6);
+    width: 384px;
+    height: 563px;
+  }
+  .description__info {
+    width: 60%;
+    gap: 30px;
+  }
+  .description__info h1 {
+    font-weight: 500;
+  }
+  .description__button {
+    width: 100%;
+  }
 }
 /* конец стилей для блока описания (сразу после хедера) */
 
@@ -329,6 +359,13 @@ h1 {
   margin: 0px 0px 30px 0px;
 }
 
+@media screen and (max-width: 1199px) {
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20%;
+  }
+}
 /* конец стилей для секции "Услуги" */
 
 /* стили для секции "Обо мне" */
