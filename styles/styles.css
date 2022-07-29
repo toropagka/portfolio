@@ -95,7 +95,8 @@ body {
   text-decoration-line: underline;
 }
 
-.header__button {
+.header__button,
+.service__button {
   width: 186px;
   height: 57px;
   background: none;
@@ -467,9 +468,12 @@ h1 {
   text-align: left;
 }
 .wrapper__block {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 120px;
   max-width: 300px;
-  max-height: 250px;
+  height: 250px;
+  position: relative;
 }
 .wrapper__block_number {
   width: 165px;
@@ -486,7 +490,7 @@ h1 {
   line-height: 60px;
   letter-spacing: -1px;
   color: #212426;
-  margin: -50px 0px 0px 0px;
+  margin: -30px 0px 0px 0px;
 }
 .wrapper__about {
   font-weight: 300;
@@ -495,30 +499,60 @@ h1 {
   color: #212426;
   margin: 0px 0px 30px 0px;
 }
+.service__button {
+  position: absolute;
+  bottom: 0;
+}
 @media screen and (max-width: 1024px) {
   .services {
   }
   .services__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 80px 80px;
+    gap: 60px 60px;
   }
   .wrapper__block {
     margin-left: 10%;
     margin-bottom: 10%;
+    width: 300px;
+  }
+  .wrapper__block_number {
+    width: 145px;
+    height: 50px;
+  }
+  .wrapper__block_event {
+    font-size: 30px;
+    margin: -20px 0px 0px 0px;
   }
 }
 @media screen and (max-width: 768px) {
+  .wrapper__block {
+    width: 280px;
+    height: 270px;
+  }
+  .wrapper__block_number {
+    width: 130px;
+    height: 50px;
+  }
+  .wrapper__block_event {
+    font-size: 25px;
+  }
+  .wrapper__about {
+    width: 240px;
+  }
+  .services__wrapper {
+    gap: 40px 10px;
+  }
 }
 @media screen and (max-width: 540px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+  }
 }
 @media screen and (max-width: 360px) {
-  .services__wrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
   .wrapper__block {
-    margin-left: 25%;
+    margin-left: 5%;
   }
 }
 
@@ -531,6 +565,9 @@ h1 {
   margin: 0px 0px 130px;
   display: flex;
   justify-content: space-between;
+}
+.about_adaptive {
+  display: none;
 }
 .about__photo {
   position: relative;
@@ -571,12 +608,81 @@ h1 {
   margin-top: 40px;
 }
 @media screen and (max-width: 1024px) {
+  .about_pc {
+    display: none;
+  }
+  .about_adaptive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__photo {
+    display: block;
+    margin: 30px 0px;
+    width: 430px;
+  }
+  .about__img {
+    width: 430px;
+    height: auto;
+  }
+
+  .about__photo_border {
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+    border: 1px solid rgba(33, 36, 38, 0.6);
+    width: 100%;
+    height: 100%;
+  }
+  .about__text {
+    font-size: 44px;
+  }
+  .about__about {
+    width: 490px;
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .about__photo {
+    width: 350px;
+  }
+  .about__img {
+    width: 350px;
+  }
+  .about__about {
+    width: 430px;
+  }
+  .about__text {
+    font-size: 38px;
+  }
 }
 @media screen and (max-width: 540px) {
+  .about__photo {
+    width: 300px;
+  }
+  .about__img {
+    width: 300px;
+  }
+  .about__about {
+    width: 300px;
+  }
+  .about__text {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 360px) {
+  .about__photo {
+    width: 228px;
+  }
+  .about__img {
+    width: 228px;
+  }
+  .about__about {
+    width: 324px;
+  }
+  .about__text {
+    font-size: 24px;
+  }
 }
 
 /* конец стилей для секции "Обо мне" */
@@ -639,12 +745,51 @@ h1 {
   margin: 35px 0px;
 }
 @media screen and (max-width: 1024px) {
+  .benefits {
+    background-image: url(../images/bg_benefits_img_ad.jpg);
+    align-items: center;
+  }
+  .benefits__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .benefits__text {
+    font-size: 40px;
+  }
+  .benefits__button {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
+  .benefits__text {
+    font-size: 34px;
+  }
 }
 @media screen and (max-width: 540px) {
+  .benefits__wrapper {
+    width: 320px;
+  }
+  .benefits__block_wrapper {
+    width: 320px;
+    padding: 40px 10px;
+  }
+  .benefits__text {
+    margin-left: 10px;
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 360px) {
+  .benefits__block_wrapper {
+    width: 320px;
+    padding: 40px 10px;
+  }
+  .benefits__text {
+    margin-left: 10px;
+    font-size: 24px;
+  }
 }
 
 /* конец стилей для секции "Преимущества работы" */
@@ -668,7 +813,6 @@ h1 {
   color: #212426;
 }
 .stages__wrapper {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -714,12 +858,34 @@ h1 {
   max-height: 481px;
 }
 @media screen and (max-width: 1024px) {
+  .stages__text {
+    font-size: 40px;
+    text-align: center;
+  }
+  .stages__description {
+    height: 400px;
+  }
+  .stages__button {
+    margin-top: 50px;
+  }
+  .stages__photos {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
+  .stages__text {
+    font-size: 34px;
+  }
 }
 @media screen and (max-width: 540px) {
+  .stages__text {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 360px) {
+  .stages__text {
+    font-size: 24px;
+  }
 }
 
 /* конец стилей для секции "Этапы работы" */
