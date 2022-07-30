@@ -2,6 +2,8 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -1438,10 +1440,17 @@ textarea {
     align-items: start;
     margin: 0;
     box-sizing: border-box;
-    padding: 10% 0 10% 5%;
+    padding: 10% 0 10%;
+  }
+  .footer__text {
+    margin-left: 5%;
   }
   .footer__links_list {
     flex-direction: column;
+    margin-left: 5%;
+  }
+  .footer__contacts {
+    margin-left: 5%;
   }
 }
 @media screen and (max-width: 768px) {
