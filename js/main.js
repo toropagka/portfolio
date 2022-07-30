@@ -17,7 +17,6 @@ const benefitsBlock = document.querySelectorAll(".benefits__block");
 const benefitsBlockNumber = document.querySelectorAll(
   ".benefits__block_number"
 );
-// const video = document.querySelectorAll(".slider-video");
 const video = document.getElementsByTagName("video");
 const body = document.querySelector("body");
 
@@ -120,12 +119,3 @@ document.body.onclick = function (e) {
   let el = e ? e.target : window.event.srcElement;
   if (el.className === "b-popup") block_modal_css.style.display = "none";
 };
-
-// let header = document.querySelector(".header").style.height;
-// let menuToggle = document.getElementById("menu-toggle");
-// let headerWrapper = document.querySelector(".header__wrapper").style.height;
-
-// if (menuToggle.checked) {
-//   console.log(menuToggle.checked);
-//   header = headerWrapper;
-// }
