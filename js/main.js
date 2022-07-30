@@ -17,7 +17,8 @@ const benefitsBlock = document.querySelectorAll(".benefits__block");
 const benefitsBlockNumber = document.querySelectorAll(
   ".benefits__block_number"
 );
-const video = document.querySelectorAll(".slider-video");
+// const video = document.querySelectorAll(".slider-video");
+const video = document.getElementsByTagName("video");
 const body = document.querySelector("body");
 
 for (const item of btnContact) {
@@ -55,33 +56,59 @@ benefitsBlock.forEach((element, index) => {
   };
 });
 
-new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: false,
-  slidesPerView: 2,
-  slidesPerGroup: 1,
-  spaceBetween: 30,
-  pauseOnMouseEnter: true,
-  playOnMouseEnter: true,
+if (document.documentElement.clientWidth >= 1024) {
+  new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    pauseOnMouseEnter: true,
+    playOnMouseEnter: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-});
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+} else {
+  new Swiper(".swiper", {
+    // Optional parameters
+    direction: "vertical",
+    loop: true,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 50,
+    pauseOnMouseEnter: true,
+    playOnMouseEnter: true,
+
+    // If we need pagination
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  });
+}
 
 for (let i of video) {
   i.addEventListener("click", function () {
@@ -94,11 +121,11 @@ document.body.onclick = function (e) {
   if (el.className === "b-popup") block_modal_css.style.display = "none";
 };
 
-let header = document.querySelector(".header").style.height;
-let menuToggle = document.getElementById("menu-toggle");
-let headerWrapper = document.querySelector(".header__wrapper").style.height;
+// let header = document.querySelector(".header").style.height;
+// let menuToggle = document.getElementById("menu-toggle");
+// let headerWrapper = document.querySelector(".header__wrapper").style.height;
 
-if (menuToggle.checked) {
-  console.log(menuToggle.checked);
-  header = headerWrapper;
-}
+// if (menuToggle.checked) {
+//   console.log(menuToggle.checked);
+//   header = headerWrapper;
+// }
