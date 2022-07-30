@@ -9,7 +9,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
+/* @media screen and (max-width: 1024px) {
+  body {
+    position: relative;
+  }
+} */
 
 .noscrol {
   overflow: hidden;
@@ -67,7 +73,7 @@ body {
   background-repeat: no-repeat;
 }
 .header__nav {
-  width: calc(80% - 175px - 186px);
+  width: 100%;
 }
 .header__list {
   display: flex;
@@ -159,6 +165,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .header {
+    left: 0;
     height: 100px;
   }
   .menu-button-container {
@@ -320,7 +327,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1110px;
+  width: 100%;
+  max-width: 1110px;
   margin: 170px 0px 0px;
 }
 
@@ -378,7 +386,6 @@ h1 {
   .description {
     flex-direction: column-reverse;
     gap: 50px;
-    margin: calc(100px + 100 * ((100vw - 320px) / 880)) 6vw 0px;
   }
 
   .description__photo {
@@ -447,7 +454,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1110px;
+  width: 100%;
   margin: 140px 0px 100px;
   text-align: center;
 }
@@ -462,8 +469,9 @@ h1 {
 }
 
 .services__wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 70px;
   justify-content: space-between;
   text-align: left;
 }
@@ -559,7 +567,8 @@ h1 {
 /* стили для секции "Обо мне" */
 
 .about {
-  width: 1110px;
+  width: 100%;
+  max-width: 1110px;
   margin: 0px 0px 130px;
   display: flex;
   justify-content: space-between;
@@ -613,6 +622,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .about__photo {
     display: block;
@@ -803,12 +813,13 @@ h1 {
 }
 .stages__text {
   margin: 0px 0px 80px;
-  width: 345px;
+  width: 100%;
   height: 57px;
   font-weight: 600;
   font-size: 48px;
   line-height: 57px;
   color: #212426;
+  text-align: center;
 }
 .stages__wrapper {
   display: flex;
@@ -895,6 +906,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   min-width: 0;
+  width: 100%;
 }
 .reviews__text {
   width: 191px;
@@ -968,10 +980,10 @@ h1 {
     display: none;
   }
   .swiper-button-next {
+    margin: auto;
     position: absolute;
     top: 115%;
-    right: 50%;
-    left: 10%;
+    left: -4vw;
     width: 256px;
   }
   .swiper-button-next::after {
@@ -1011,6 +1023,7 @@ h1 {
 /* стили для секции "вопросы" */
 .questions {
   display: flex;
+  width: 100%;
   max-width: 1110px;
   height: 427px;
   margin: 0px 0px 120px;
@@ -1226,7 +1239,7 @@ textarea {
 @media screen and (max-width: 360px) {
   .questions_adaptive {
     width: 85%;
-    margin-left: 7%;
+    margin-top: 7%;
   }
 
   .questions__wrapper {
@@ -1424,6 +1437,7 @@ textarea {
     flex-direction: column;
     align-items: start;
     margin: 0;
+    box-sizing: border-box;
     padding: 10% 0 10% 5%;
   }
   .footer__links_list {
