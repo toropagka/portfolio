@@ -1481,7 +1481,8 @@ textarea {
 
 .services-pop-up {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-areas: "p t" "p l" "p b";
   align-items: center;
   justify-content: space-around;
   box-sizing: border-box;
@@ -1506,6 +1507,7 @@ textarea {
   font-weight: 300;
 }
 .services__img-wrapper {
+  grid-area: p;
   position: relative;
 }
 .services__img-wrapper::before {
@@ -1535,10 +1537,12 @@ textarea {
 }
 
 .services-wrapper {
+  grid-area: t;
+
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: 700px;
+  height: 100px;
   padding-bottom: 97px;
 }
 .services-header {
@@ -1549,6 +1553,11 @@ textarea {
   color: #212426;
   margin: 0 auto;
   max-width: 490px;
+}
+
+.services-list {
+  grid-area: l;
+  margin: -130px 0 -125px 0;
 }
 .services-price,
 .services-item {
@@ -1571,16 +1580,110 @@ textarea {
 }
 
 .services__button {
+  grid-area: b;
   width: 186px;
   height: 57px;
   border: none;
   margin-left: 40px;
 }
 @media screen and (max-width: 1024px) {
+  .services-pop-up {
+    grid-template-areas: "p t" "l l" "b b";
+    justify-content: center;
+    height: 900px;
+  }
+  .services-pop-up__img {
+    width: 330px;
+    height: auto;
+  }
+  .services__img-wrapper::after,
+  .services__img-wrapper::before {
+    display: none;
+  }
+  .services-list {
+    grid-area: l;
+    margin: -60px 0 -80px 0;
+    padding: 0;
+  }
+  .services-item {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .services-wrapper {
+    max-width: 330px;
+  }
+  .services__button {
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .services-pop-up {
+    height: 900px;
+  }
+  .services__img-wrapper {
+    width: 220px;
+  }
+  .services-pop-up__img {
+    width: 220px;
+    height: auto;
+  }
+  .services__img-wrapper::after,
+  .services__img-wrapper::before {
+    display: none;
+  }
+  .services-header {
+    font-size: 30px;
+  }
+  .services-list {
+    grid-area: l;
+    margin: -60px 0 -80px 0;
+    padding: 0;
+    width: 500px;
+  }
+  .services-item {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .services-wrapper {
+    max-width: 280px;
+  }
 }
 @media screen and (max-width: 540px) {
+  .services-pop-up {
+    height: 750px;
+  }
+  .services__img-wrapper {
+    width: 140px;
+  }
+  .services-pop-up__img {
+    width: 140px;
+    height: auto;
+  }
+  .services__img-wrapper::after,
+  .services__img-wrapper::before {
+    display: none;
+  }
+  .services-header {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .services-price {
+    margin-top: 7px;
+    font-size: 18px;
+  }
+  .services-list {
+    grid-area: l;
+    margin: -140px 0 -140px 0;
+    padding: 0;
+    width: 320px;
+  }
+  .services-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .services-wrapper {
+    max-width: 200px;
+  }
 }
 @media screen and (max-width: 360px) {
 }
@@ -1606,7 +1709,7 @@ textarea {
   align-items: center;
   justify-content: space-around;
   box-sizing: border-box;
-  width: 754px;
+  max-width: 754px;
   height: 454px;
   margin: 15% auto 0;
   background-color: #fff;
@@ -1634,7 +1737,8 @@ textarea {
   font-size: 24px;
   line-height: 28px;
   color: #212426;
-  width: 347px;
+  max-width: 647px;
+  width: 360px;
   height: 56px;
   margin: 50px 50px 0px 0px;
 }
@@ -1653,6 +1757,7 @@ textarea {
   display: flex;
   justify-content: flex-end;
   background: #221e1e;
+  max-width: 638px;
   width: 638px;
   height: 256px;
   margin: 12px;
@@ -1692,12 +1797,53 @@ textarea {
   display: block;
 }
 @media screen and (max-width: 1024px) {
+  .pop-up {
+  }
+  .pop-up__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    outline: none;
+  }
+  .pop-up__text {
+    align-self: center;
+    font-style: normal;
+    margin: 50px 0px 0px 0px;
+    color: #212426;
+  }
+  .pop-up__img {
+    display: none;
+  }
+  .pop-up__item {
+    background: #eed2b2;
+    width: 275px;
+    height: 57px;
+  }
+  .pop-up__link {
+    color: #212426;
+  }
 }
 @media screen and (max-width: 768px) {
+  .pop-up {
+    box-sizing: border-box;
+    padding-left: 10%;
+  }
+  .pop-up__wrapper {
+    justify-content: start;
+  }
 }
 @media screen and (max-width: 540px) {
+  .pop-up__text {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 360px) {
+  .pop-up__text {
+    font-size: 18px;
+  }
+  .pop-up__item {
+    font-size: 16px;
+  }
 }
 
 /*конец стилей для всплывающей карточки*/
