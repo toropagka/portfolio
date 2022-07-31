@@ -541,6 +541,9 @@ h1 {
   .service__button {
     border: 1px solid #212426;
   }
+  .services__text {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .wrapper__block {
@@ -561,16 +564,25 @@ h1 {
   .services__wrapper {
     gap: 40px 0px;
   }
+  .services__text {
+    font-size: 36px;
+  }
 }
 @media screen and (max-width: 540px) {
   .services__wrapper {
     grid-template-columns: 1fr;
     column-gap: 60px;
   }
+  .services__text {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 360px) {
   .wrapper__block {
     margin-left: 5%;
+  }
+  .services__text {
+    font-size: 24px;
   }
 }
 
@@ -942,6 +954,7 @@ h1 {
   display: flex;
   align-items: center;
   max-width: 920px;
+  margin-left: auto;
 }
 .swiper-slide {
   display: flex;
@@ -1098,13 +1111,14 @@ input {
 }
 .questions__contacts {
   display: flex;
-  gap: 30px;
 }
 .questions__name {
   background: none;
+  margin-bottom: 20px;
 }
 .questions__email {
   background: none;
+  margin-bottom: 20px;
 }
 textarea {
   resize: none;
@@ -1236,7 +1250,7 @@ textarea {
     height: 130px;
   }
   .questions__description_wrapper {
-    padding-left: 17%;
+    padding-left: 19%;
   }
   .questions__img {
     width: 140px;
@@ -1263,7 +1277,7 @@ textarea {
     height: 120px;
   }
   .questions__description_wrapper {
-    padding-left: 15%;
+    padding-left: 17%;
   }
 
   .questions__img {
@@ -1332,8 +1346,10 @@ textarea {
 }
 .contacts__social {
   display: flex;
-  gap: 30px;
   margin: 36px 0px 100px;
+}
+.contacts__social a:nth-child(odd) {
+  margin-right: 25px;
 }
 .contacts__social a {
   text-decoration: none;
