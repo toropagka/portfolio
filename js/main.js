@@ -18,7 +18,9 @@ const benefitsBlockNumber = document.querySelectorAll(
   ".benefits__block_number"
 );
 const video = document.getElementsByTagName("video");
+const inputToggle = document.getElementById("menu-toggle");
 const body = document.querySelector("body");
+const headerLink = document.querySelectorAll(".header__link");
 
 for (const item of btnContact) {
   item.addEventListener("click", () => {
@@ -93,6 +95,7 @@ if (document.documentElement.clientWidth >= 1024) {
     spaceBetween: 50,
     pauseOnMouseEnter: true,
     playOnMouseEnter: true,
+    allowTouchMove: false,
 
     // If we need pagination
 
@@ -119,3 +122,11 @@ document.body.onclick = function (e) {
   let el = e ? e.target : window.event.srcElement;
   if (el.className === "b-popup") block_modal_css.style.display = "none";
 };
+
+if (document.documentElement.clientWidth < 1024) {
+  for (let item of headerLink) {
+    item.addEventListener("click", () => {
+      inputToggle.checked = !inputToggle.checked;
+    });
+  }
+}

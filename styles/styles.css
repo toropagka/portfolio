@@ -33,6 +33,13 @@ body {
   transition: all ease-in-out 0.3s;
   border: none;
 }
+@media screen and (max-width: 1024px) {
+  .button {
+    background-color: #eed2b2;
+    transition: all ease-in-out 0.3s;
+    border: none;
+  }
+}
 
 #about,
 #contacts,
@@ -531,6 +538,9 @@ h1 {
     font-size: 30px;
     margin: -20px 0px 0px 0px;
   }
+  .service__button {
+    border: 1px solid #212426;
+  }
 }
 @media screen and (max-width: 768px) {
   .wrapper__block {
@@ -543,6 +553,7 @@ h1 {
   }
   .wrapper__block_event {
     font-size: 22px;
+    line-height: 40px;
   }
   .wrapper__about {
     width: 240px;
@@ -995,6 +1006,7 @@ h1 {
     align-items: center;
     background-color: #fff;
     color: #212426;
+    border: 1px solid #212426;
   }
 }
 @media screen and (max-width: 768px) {
