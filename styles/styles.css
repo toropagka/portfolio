@@ -534,7 +534,7 @@ h1 {
 .wrapper__block {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   max-width: 300px;
   height: 250px;
   position: relative;
@@ -561,11 +561,11 @@ h1 {
   font-size: 18px;
   line-height: 140%;
   color: #212426;
-  margin: 0px 0px 30px 0px;
+  margin: 0px;
 }
 .service__button {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
   .services {
@@ -577,7 +577,7 @@ h1 {
     gap: 60px 60px;
   }
   .wrapper__block {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     width: 300px;
     height: 210px;
   }
@@ -1056,6 +1056,9 @@ h1 {
   display: none;
 }
 @media screen and (max-width: 1024px) {
+  .reviews {
+    margin-bottom: 190px;
+  }
   .father {
     width: 80%;
     height: 500px;
