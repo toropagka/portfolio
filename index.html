@@ -182,7 +182,7 @@
 
         <div class="stages__description_wrapper">
           <img src="./images/booking.svg" alt="booking" class="stages__description_img">
-          <p class="stages__description_text">Бронирование даты и внесение предоплаты</p>
+          <span class="stages__description_text">Бронирование даты и внесение предоплаты</span>
         </div>
 
         <div class="stages__description_wrapper">
@@ -258,6 +258,7 @@
         <p class="questions__text">Оставьте заявку и я с вами свяжусь</p>
       </div>
     </div>
+    <!-- возможно инста вместо почты (https://instagram.com/olga_mozhaytseva?igshid=YmMyMTA2M2Y=) -->
     <form class="questions__form" action="https://formsubmit.co/your@email.com" method="POST">
       <div class="questions__contacts">
         <input class="questions__name" placeholder="Ваше имя" type="text" name="name" required>
@@ -293,38 +294,41 @@
             fill="white" />
         </svg>
       </a>
-      <a href="#"><svg class="contacts__social_whatsapp" width="26" height="28" viewBox="0 0 26 28" fill="none"
+      <a href="#"><svg class="contacts__social_whatsapp" width="29" height="28" viewBox="0 0 29 28" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
-            d="M11.5 5.675C6.79397 5.675 2.9683 9.36875 2.96183 13.9125C2.96183 15.4688 3.41496 16.9875 4.26942 18.2938L4.47009 18.6063L3.60915 21.6437L6.83929 20.825L7.15 21.0063C8.45759 21.7563 9.95937 22.1562 11.4935 22.1562H11.5C16.1996 22.1562 20.1288 18.4625 20.1288 13.9187C20.1288 11.7188 19.1449 9.65 17.533 8.09375C15.9147 6.53125 13.7786 5.675 11.5 5.675ZM16.5167 17.45C16.3031 18.0312 15.2804 18.5562 14.7884 18.625C13.9728 18.7437 13.3384 18.6812 11.7136 18.0063C9.14375 16.9312 7.46071 14.4312 7.33125 14.2687C7.20179 14.1062 6.28259 12.925 6.28259 11.7063C6.28259 10.4875 6.94286 9.8875 7.18237 9.6375C7.4154 9.3875 7.69375 9.325 7.86853 9.325C8.03683 9.325 8.21161 9.325 8.36049 9.33125C8.51585 9.3375 8.72946 9.275 8.93661 9.75625C9.15022 10.25 9.66161 11.4688 9.72634 11.5938C9.79107 11.7188 9.83638 11.8625 9.74576 12.025C9.25379 12.975 8.72946 12.9375 8.99487 13.375C9.98527 15.0188 10.9757 15.5875 12.4839 16.3188C12.7429 16.4438 12.8917 16.425 13.0406 16.2563C13.1895 16.0938 13.6815 15.5312 13.8498 15.2875C14.0181 15.0375 14.1929 15.0813 14.4259 15.1625C14.6589 15.2438 15.9212 15.8438 16.1801 15.9688C16.4391 16.0938 16.6074 16.1562 16.6721 16.2563C16.7304 16.375 16.7304 16.875 16.5167 17.45ZM22.8929 0H0.107143C-1.60826 0 -3 1.34375 -3 3V25C-3 26.6562 -1.60826 28 0.107143 28H22.8929C24.6083 28 26 26.6562 26 25V3C26 1.34375 24.6083 0 22.8929 0ZM11.4935 23.825C9.77165 23.825 8.08214 23.4062 6.58683 22.6187L1.14286 24L2.59933 18.8625C1.69955 17.3625 1.22701 15.6562 1.22701 13.9062C1.23348 8.44375 5.83594 4 11.4935 4C14.2382 4 16.8145 5.03125 18.7565 6.90625C20.692 8.78125 21.8571 11.2687 21.8571 13.9187C21.8571 19.3813 17.1511 23.825 11.4935 23.825Z"
+            d="M14.5 5.675C9.79397 5.675 5.9683 9.36875 5.96183 13.9125C5.96183 15.4688 6.41496 16.9875 7.26942 18.2938L7.47009 18.6063L6.60915 21.6437L9.83929 20.825L10.15 21.0063C11.4576 21.7563 12.9594 22.1562 14.4935 22.1562H14.5C19.1996 22.1562 23.1288 18.4625 23.1288 13.9187C23.1288 11.7187 22.1449 9.65 20.533 8.09375C18.9147 6.53125 16.7786 5.675 14.5 5.675ZM19.5167 17.45C19.3031 18.0313 18.2804 18.5562 17.7884 18.625C16.9728 18.7437 16.3384 18.6813 14.7136 18.0063C12.1437 16.9313 10.4607 14.4312 10.3313 14.2687C10.2018 14.1062 9.28259 12.925 9.28259 11.7063C9.28259 10.4875 9.94286 9.8875 10.1824 9.6375C10.4154 9.3875 10.6937 9.325 10.8685 9.325C11.0368 9.325 11.2116 9.325 11.3605 9.33125C11.5158 9.3375 11.7295 9.275 11.9366 9.75625C12.1502 10.25 12.6616 11.4688 12.7263 11.5938C12.7911 11.7188 12.8364 11.8625 12.7458 12.025C12.2538 12.975 11.7295 12.9375 11.9949 13.375C12.9853 15.0187 13.9757 15.5875 15.4839 16.3188C15.7429 16.4438 15.8917 16.425 16.0406 16.2563C16.1895 16.0938 16.6815 15.5313 16.8498 15.2875C17.0181 15.0375 17.1929 15.0813 17.4259 15.1625C17.6589 15.2438 18.9212 15.8438 19.1801 15.9688C19.4391 16.0938 19.6074 16.1563 19.6721 16.2563C19.7304 16.375 19.7304 16.875 19.5167 17.45V17.45ZM25.8929 0H3.10714C1.39174 0 0 1.34375 0 3V25C0 26.6562 1.39174 28 3.10714 28H25.8929C27.6083 28 29 26.6562 29 25V3C29 1.34375 27.6083 0 25.8929 0ZM14.4935 23.825C12.7717 23.825 11.0821 23.4062 9.58683 22.6187L4.14286 24L5.59933 18.8625C4.69955 17.3625 4.22701 15.6562 4.22701 13.9062C4.23348 8.44375 8.83594 4 14.4935 4C17.2382 4 19.8145 5.03125 21.7565 6.90625C23.692 8.78125 24.8571 11.2687 24.8571 13.9187C24.8571 19.3812 20.1511 23.825 14.4935 23.825Z"
             fill="white" />
         </svg>
+
       </a>
     </div>
 
   </section>
 
   <footer class="footer">
-    <div class="footer__text">
-      <div class="footer__text_logo">
-        <img src="./images/footer_logo.png" alt="footer_logo">
+    <div class="footer__wrapper">
+      <div class="footer__text">
+        <div class="footer__text_logo">
+          <img src="./images/footer_logo.png" alt="footer_logo">
+        </div>
+        <p class="footer__text_description">Ведущая мероприятий в Зеленограде,
+          Москве и Московской области</p>
       </div>
-      <p class="footer__text_description">Ведущая мероприятий в Зеленограде,
-        Москве и Московской области</p>
-    </div>
 
-    <ul class="footer__links_list">
-      <li class="footer__links_item"><a href="#services"> Услуги</a></li>
-      <li class="footer__links_item"><a href="#reviews"> Отзывы</a></li>
-      <li class="footer__links_item"><a href="#contacts"> Контакты</a></li>
-      <li class="footer__links_item"><a href="#about"> Обо мне</a></li>
-      <li class="footer__links_item"><a href="#stages"> Этапы работы</a></li>
-      <li class="footer__links_item"><a href="#questions"> Форма обратной связи</a></li>
-    </ul>
+      <ul class="footer__links_list">
+        <li class="footer__links_item"><a href="#services"> Услуги</a></li>
+        <li class="footer__links_item"><a href="#reviews"> Отзывы</a></li>
+        <li class="footer__links_item"><a href="#contacts"> Контакты</a></li>
+        <li class="footer__links_item"><a href="#about"> Обо мне</a></li>
+        <li class="footer__links_item"><a href="#stages"> Этапы работы</a></li>
+        <li class="footer__links_item"><a href="#questions"> Форма обратной связи</a></li>
+      </ul>
 
-    <div class="footer__contacts">
-      <div class="contacts__phone_number"><a href="tel:+79858490607">+7 (985) 849-06-07</a></div>
-      <button class="button footer__button button-contact">Связаться</button>
+      <div class="footer__contacts">
+        <div class="contacts__phone_number"><a href="tel:+79858490607">+7 (985) 849-06-07</a></div>
+        <button class="button footer__button button-contact">Связаться</button>
+      </div>
     </div>
   </footer>
 
@@ -489,8 +493,11 @@
         <div class="pop-up__wrapper">
           <img class="pop-up__img" src="./images/popup_img.png" alt="Olga">
           <ul class="pop-up__list">
-            <li class="pop-up__item"><a target="_blank" href="#" class="pop-up__link">Написать ВКонтакте</a></li>
-            <li class="pop-up__item"><a target="_blank" href="#" class="pop-up__link">Написать WhatsApp</a></li>
+            <li class="pop-up__item"><a target="_blank" href="https://vk.com/olga_mozhaytseva"
+                class="pop-up__link">Написать ВКонтакте</a></li>
+            <li class="pop-up__item"><a target="_blank" href="tel:+79858490607" class="pop-up__link">Написать
+                WhatsApp</a>
+            </li>
           </ul>
         </div>
       </div>
