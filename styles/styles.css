@@ -1727,6 +1727,9 @@ li.services-item::marker {
   }
 }
 @media screen and (max-width: 1024px) {
+  .services__img-wrapper {
+    margin-left: 0px;
+  }
   .services-pop-up {
     grid-template-areas: "p t" "l l" "b b";
     justify-content: center;
