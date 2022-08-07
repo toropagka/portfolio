@@ -1036,8 +1036,15 @@ h1 {
 .swiper-slide video {
   width: 445px;
   height: 230px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
-
+video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
 .father .swiper-button-next::after,
 .father .swiper-button-prev::after {
   color: #212426;
