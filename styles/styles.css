@@ -570,6 +570,7 @@ h1 {
 @media screen and (max-width: 1024px) {
   .services {
     margin-bottom: 50px;
+    margin-top: 70px;
   }
   .services__wrapper {
     display: grid;
@@ -592,6 +593,7 @@ h1 {
 
   .services__text {
     font-size: 40px;
+    margin-bottom: 50px;
   }
   .service__button {
     position: absolute;
@@ -745,6 +747,7 @@ h1 {
   }
   .about__text {
     font-size: 38px;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 540px) {
